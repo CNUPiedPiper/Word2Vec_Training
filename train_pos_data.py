@@ -15,8 +15,11 @@ class SentenceReader:
             yield line.split(' ')
 
 
-sentences_vocab = SentenceReader('/Users/jegalsumin/Documents/HARU/output.txt')
-sentences_train = SentenceReader('/Users/jegalsumin/Documents/HARU/output.txt')
+#sentences_vocab = SentenceReader('/Users/jegalsumin/Documents/HARU/output.txt')
+#sentences_train = SentenceReader('/Users/jegalsumin/Documents/HARU/output.txt')
+
+sentences_vocab = SentenceReader('# Your specific path of output file')
+sentences_train = SentenceReader('# Your specific path of output file')
 
 model = gensim.models.Word2Vec()
 model.build_vocab(sentences_vocab)
