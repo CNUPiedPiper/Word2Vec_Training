@@ -2,7 +2,8 @@
 
 ## Dependency
 ```
-$ easy_install -U gensim
+$ sudo apt-get install gfortran
+$ sudo pip2 install --upgrade gensim
 
 $ sudo apt-get install python-dev
 $ sudo pip install konlpy
